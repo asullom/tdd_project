@@ -29,6 +29,9 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+PROJECT_APPS = (
+    'accounting',
+)
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -36,9 +39,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounting',
     'django_jenkins',
-)
+) + PROJECT_APPS
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
